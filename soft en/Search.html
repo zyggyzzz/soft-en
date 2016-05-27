@@ -1,0 +1,69 @@
+<!DOCTYE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link href="style3.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+                     <div class="nav">
+  <div class="form">
+    <form class="login-form">
+      <button class="gbutton" type="button" onclick="">Borrow</button>
+	  <button class="gbutton" type="button" onclick="">Return</button>
+      <button class="gbutton" type="button" onclick="">login</button>
+	  <button class="gbutton" type="button" onclick="">login</button>
+	  <button class="gbutton" type="button" onclick="">login</button>
+    </form>
+  </div>
+</div>
+<div class="contents">
+<div class="inner">
+<h3>Search</h3>
+
+
+
+
+<button id="adiv" class="cbutton" type="button" onclick="">Student</button>
+<button class="cbutton" type="button" onclick="hideshow(document.getElementById('adiv'))">Staff</button>
+
+
+    <div class="switch-field">
+      <input type="radio" id="switch_left" name="switch_2" value="yes" checked/>
+      <label for="switch_left">Yes</label>
+      <input type="radio" id="switch_right" name="switch_2" value="no" />
+      <label for="switch_right">No</label>
+    </div>
+    
+	
+	
+    <div class="switch-field">
+      <input type="radio" id="switch_3_left" name="switch_3" value="yes" checked/>
+      <label for="switch_3_left">One</label>
+      <input type="radio" id="switch_3_center" name="switch_3" value="maybe" />
+      <label for="switch_3_center">Two</label>
+            <input type="radio" id="switch_3_right" name="switch_3" value="no" />
+      <label for="switch_3_right">Three</label>
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+</div>
+		
+    </body>
+	
+	
+	<script type="text/javascript">
+function hideshow(which){
+if (!document.getElementById)
+return
+if (which.style.display=="block")
+which.style.display="none"
+else
+which.style.display="block"
+}
+</script>
+
+
+</html>
