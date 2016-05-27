@@ -11,14 +11,14 @@
     <form class="login-form">
 
 	  <ul id="mainmenu">
-<li id="menustudent" class="menu">Student</li>
-<li class="submenustudent">Search</li>
-<li class="submenustudent">Add</li>
+<li class="menu" data-panelid="submenu1">Student</li>
+<li class="submenu1">Search</li>
+<li class="submenu1">Add</li>
 
-<li id="menubooks" class="menu">Books</li>
-<li class="submenubooks">Search</li>
-<li class="submenubooks">Edit</li>
-<li class="submenubooks">Add</li>
+<li class="menu" data-panelid="submenu2">Books</li>
+<li class="submenu2">Search</li>
+<li class="submenu2">Edit</li>
+<li class="submenu2">Add</li>
 
 
 
@@ -74,15 +74,12 @@ $(document).ready(function(){
 });
 
 $(function() {
-    $('#menustudent').click(function(){
-      $('.submenustudent').slideToggle(50);
+    $('.menu').click(function(){
+      var panelId = $(this).attr('data-panelid');
+	  $('.' + panelId).toggle();
     });
 });
-$(function() {
-    $('#menubooks').click(function(){
-      $('.submenubooks').slideToggle(50);
-    });
-});
+
 </script>
 
 
