@@ -9,12 +9,24 @@
                      <div class="nav">
   <div class="form">
     <form class="login-form">
-      <button class="gbutton" type="button" onclick="">Borrow</button>
-	  <button class="gbutton" type="button" onclick="">Return</button>
-      <button class="gbutton" type="button" onclick="">login</button>
-	  <button class="gbutton" type="button" onclick="">login</button>
-	  <button class="gbutton" type="button" onclick="">login</button>
+
+	  <ul id="mainmenu">
+<li id="menustudent" class="menu">Student</li>
+<li class="submenustudent">Search</li>
+<li class="submenustudent">Add</li>
+
+<li id="menubooks" class="menu">Books</li>
+<li class="submenubooks">Search</li>
+<li class="submenubooks">Edit</li>
+<li class="submenubooks">Add</li>
+
+
+
+
+</ul>
+	  
     </form>
+	
   </div>
 </div>
 <div class="contents">
@@ -25,12 +37,19 @@ Student number:<br>
 Student name:
 
 
-
+<ul id="menu">
+<li class="menu">Auctions</li>
+<li class="submenu">Submenu 1</li>
+<li class="submenu">Submenu 2</li>
+<li class="submenu">Submenu 3</li>
+</ul>
 
 
 
 </p>
 
+
+<p>Welcome to our page</p>
 
 
 
@@ -38,6 +57,27 @@ Student name:
 </div>
 
 </div>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+
+$(function() {
+    $('#menustudent').click(function(){
+      $('.submenustudent').slideToggle(50);
+    });
+});
+$(function() {
+    $('#menubooks').click(function(){
+      $('.submenubooks').slideToggle(50);
+    });
+});
+</script>
+		
+		
 		
     </body>
 </html>
